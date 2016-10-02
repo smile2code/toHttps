@@ -1,0 +1,34 @@
+// toHttps.idl : IDL source for toHttps
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (toHttps.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(0967C72D-097B-4EB1-B9FB-32A5DC0F197C),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IToHttpsBho : IDispatch{
+};
+[
+	uuid(FE4171DF-2A77-4CD1-A0D9-390C7CAF311A),
+	version(1.0),
+]
+library toHttpsLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(F07F0E1F-71C1-4067-8840-51034D274DA4)		
+	]
+	coclass ToHttpsBho
+	{
+		[default] interface IToHttpsBho;
+	};
+};
+

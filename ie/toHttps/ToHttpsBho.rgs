@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {F07F0E1F-71C1-4067-8840-51034D274DA4} = s 'ToHttpsBho Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{FE4171DF-2A77-4CD1-A0D9-390C7CAF311A}'
+			Version = s '1.0'
+		}
+	}
+}
