@@ -1,0 +1,4 @@
+这是一个浏览器插件。
+当用户输入不带https的网址时，插件让用户优先使用https，以保证用户访问安全。
+此插件只针对域名被GFW拦截的情况有效，对于http挟持、DNS污染等情况无效，对于服务器IP被GFW拦截的也无效。后续版本将会改善和加强。
+代码开源地址：https://github.com/smile2code/tohttps
